@@ -1,0 +1,112 @@
+/* I notice header and the navigation bar are the same as index and kosy is working on that
+so I won't do those bits*/
+
+
+.contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact {
+/* align-items: center; */
+    background-color: #DDD;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+}
+
+.contact-method {
+    background-color: #DDD;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.contactLink:hover {
+    color: #007BFF;
+}
+
+.intro {
+    font-weight: bold;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.item {
+    text-align: center;
+}
+
+.product:hover {
+    background-color: #FFFFFF;
+}
+
+.prodImg {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+}
+
+.price {
+    color: #007BFF;
+    font-weight:bold;
+    align-items: center;
+}
+
+.addCart {
+    background-color: #4CAF50;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.addCart:hover {
+    background-color: #45A049;
+}
+
+.prods {
+    background-color: #DDD;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+    grid-template-rows: 1fr 1fr; /* Creates two rows of equal height */
+    gap: 0px;
+
+}
+
+
+@media screen and (min-width: 1080px) {
+    .prodImg {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .prodName {
+        font-size: 3vw;
+    }
+    .price {
+        font-size: 2.5vw;
+    }
+    .addCart {
+        width: 15.5vw;
+        font-size: 2.5vw;
+    }
+}
+
+/* The content can only be made so responsive before problems arise.
+The assignment instructions give padding in px which is absolute,
+so the design starts to break down after a small enough screen width
+because the 20px margins and paddings become significant enough*/
