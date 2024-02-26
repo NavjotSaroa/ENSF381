@@ -1,7 +1,103 @@
 /* I notice header and the navigation bar are the same as index and kosy is working on that
 so I won't do those bits*/
 
+/*GENERAL*/
 
+.header {
+    background-color: #333;
+    padding: 20px;
+    margin: 0px;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0px;
+    color: white;
+}
+
+
+/*INDEX*/
+
+.about-us {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #DDD;
+    flex-direction: column;
+}
+
+.shop-button {
+    background-color: #4CAF50;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.customer-reviews {
+    background-color: #DDD;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+/*LOGIN*/
+
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    opacity: 0.5;   
+}
+
+.login-button:hover {
+    background-color: #45A049;
+    opacity: 1.0;
+}
+
+.signup-link {
+    background-color: #007BFF;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+/*CONTACT*/
 .contactMain {
     display: flex;
     flex-direction: column;
@@ -31,6 +127,9 @@ so I won't do those bits*/
 .intro {
     font-weight: bold;
 }
+
+
+/*PRODUCT*/
 
 .product {
     display: flex;
